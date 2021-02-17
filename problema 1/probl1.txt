@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstring>
+#include <stdio.h>
+using namespace std;
+int s,n,i;
+char sn[50];
+int main()
+{
+    FILE* fisier;
+    fisier=fopen("fisier.txt","r");
+    while(!feof(fisier))
+    {
+        fscanf(fisier, "%s/n", sn);
+        n=0;
+        for(i=0;i<strlen(sn);i++)
+            n=n*10+(sn[i]-'0');
+        s=s+n;
+    }
+    printf("%d",s);
+}
