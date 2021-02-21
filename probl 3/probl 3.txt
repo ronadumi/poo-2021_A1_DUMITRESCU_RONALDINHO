@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int i,m,j,k;
+char s[100][50];
+int main()
+{
+
+  char str[] ="pula in mata de string";
+  char *p=strtok(str," ");
+  while (p != NULL)
+  {
+    i++;
+    strcpy(s[i],p);
+    p=strtok (NULL, " ");
+  }
+  for(j=1;j<i;j++)
+    for(k=j+1;k<=i;k++)
+    if(strlen(s[j])<strlen(s[k]))
+        swap(s[j],s[k]);
+    else
+        if(strlen(s[j])==strlen(s[k]))
+          if(strcmp(s[j],s[k])>0)
+          swap(s[j],s[k]);
+    for(m=1;m<=i;m++)
+        cout<<s[m]<<endl;
+
+
+  return 0;
+}
