@@ -1,2 +1,1 @@
-# poo-2021
-repo cod sursa poo 2021
+POO-2021-A1_Dumitrescu_Ronaldinho
