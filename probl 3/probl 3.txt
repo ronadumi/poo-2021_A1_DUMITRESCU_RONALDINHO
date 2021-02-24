@@ -5,7 +5,7 @@ char s[100][50];
 int main()
 {
 
-  char str[] ="pula in mata de string";
+  char str[] ="this is sparta";
   char *p=strtok(str," ");
   while (p != NULL)
   {
